@@ -5,8 +5,10 @@ import {Component} from '@angular/core';
     template: `<h1>{{title}}</h1>
     <h2>{{writer}}</h2>
     <h3>{{hero.name}} details!</h3>
-    <div><label>{{hero.id}}</label><div>
-    <div><label>{{hero.name}}</label></div>`
+    <div><label>id:</label>{{hero.id}}<div>
+    <div><label>name:</label>
+     <input value="{{hero.name}}" placeholder="name">
+	</div>`
 })
 export class AppComponent {
   title='Tours of Heroes';
@@ -21,3 +23,4 @@ export class Hero {
     id:number;
     name:string;
 }
+// Example of one way binding
