@@ -7,7 +7,7 @@ import {Component} from '@angular/core';
     <h3>{{hero.name}} details!</h3>
     <div><label>id:</label>{{hero.id}}<div>
     <div><label>name:</label>
-     <input value="{{hero.name}}" placeholder="name">
+     <input [(ngModel)]="hero.name" placeholder="name">
 	</div>`
 })
 export class AppComponent {
@@ -23,4 +23,4 @@ export class Hero {
     id:number;
     name:string;
 }
-// Example of one way binding
+// Example of two way binding
