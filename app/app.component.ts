@@ -10,7 +10,7 @@ import {Component} from '@angular/core';
 })
 export class AppComponent {
   title='Tours of Heroes';
-  writer'Sanjeet';
+  writer='Sanjeet';
   hero: Hero ={
 	id:1,
 	name: 'Wisdom'
